@@ -2,19 +2,29 @@ package logicaNegocio;
 
 public class Perro extends Animal implements Domestico{
 
+    TipoHabitat habitat;
+
+    public Perro() {
+        this. habitat= TipoHabitat.TERRESTRE;
+    }
+    
     @Override
     public String interactuarConHumano() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "El perro mueve la cola y ladra de felicidad";
     }
     // TODO: Aquí va tu código
+    @Override
+    public TipoHabitat getHabitat() {
+        return habitat;
+    }
 
     @Override
     public String emitirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Ladrido";
     }
 
     @Override
     public String obtenerDieta() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Omnívoro";
     }
 }

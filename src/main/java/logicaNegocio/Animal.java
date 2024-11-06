@@ -7,5 +7,7 @@ public abstract class Animal {
     
     public abstract String obtenerDieta();
     
+    public abstract TipoHabitat getHabitat();
+    
     
 }
